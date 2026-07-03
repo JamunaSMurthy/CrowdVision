@@ -1,0 +1,6 @@
+# Table: Attention mechanism ablation — "Full self-attention" row.
+# Replaces Performer linear attention with standard quadratic softmax
+# self-attention inside every view encoder and the Global Fusion Encoder.
+_base_: base.yaml
+model:
+  attention_type: full

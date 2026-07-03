@@ -1,0 +1,4 @@
+# Table: Fusion/refinement and loss ablation — "w/o view-consistency loss" row.
+_base_: base.yaml
+loss:
+  use_view_loss: false

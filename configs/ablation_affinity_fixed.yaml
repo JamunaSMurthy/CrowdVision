@@ -1,0 +1,6 @@
+# Table: View affinity design — "Fixed graph" row.
+# A hand-set, non-trainable adjacency (heavier self-weight, light neighbor
+# weight) replaces the learned affinity graph.
+_base_: base.yaml
+model:
+  affinity_type: fixed

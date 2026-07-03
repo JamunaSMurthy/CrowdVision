@@ -1,0 +1,6 @@
+# Table: View affinity design — "Random graph" row.
+# A fresh Dirichlet-sampled adjacency is drawn every forward pass and is not
+# learned (no gradient flows into it).
+_base_: base.yaml
+model:
+  affinity_type: random

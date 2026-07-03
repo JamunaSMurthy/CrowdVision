@@ -1,0 +1,7 @@
+# Table: Fusion mechanism ablation — "Graph only, no kernel" row.
+# Uses the learnable inter-view affinity graph to mix pooled view descriptors,
+# but skips kernelized token-level attention entirely.
+_base_: base.yaml
+model:
+  fusion_type: graph_only
+  affinity_type: learnable

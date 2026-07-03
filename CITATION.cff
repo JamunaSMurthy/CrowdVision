@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software or the CrowdViT method, please cite the paper below."
+title: "CrowdViT: A Multi-Scale Performer-Graph Transformer for Efficient Real-Time Video Action Recognition"
+type: software
+authors:
+  - name: "Anonymous Author(s)"
+license: Apache-2.0
+version: 0.1.0
+date-released: "2026-07-03"
+abstract: >-
+  Reference implementation of CrowdViT, a Multi-Scale Performer-Graph
+  Transformer for efficient real-time video action recognition. The
+  accompanying paper is a preprint / under review at the time of this
+  release, so no journal, volume, DOI, or author-identifying repository
+  URL is listed here — this record is anonymized for blind review.

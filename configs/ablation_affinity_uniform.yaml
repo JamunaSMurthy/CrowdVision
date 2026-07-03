@@ -1,0 +1,4 @@
+# Table: View affinity design — "Uniform weights" row.
+_base_: base.yaml
+model:
+  affinity_type: uniform

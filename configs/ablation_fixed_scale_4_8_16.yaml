@@ -1,0 +1,5 @@
+# Table: Fixed-scale sensitivity — "Fixed tau = 4, 8, 16" row.
+_base_: base.yaml
+model:
+  view_mode: fixed
+  view_window_sizes: [16, 8, 4]

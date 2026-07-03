@@ -1,0 +1,6 @@
+# Table: Fusion mechanism ablation — "Concatenation only" row.
+# No cross-view fusion at all: per-view Performer outputs are concatenated
+# and handed straight to the Global Fusion Encoder.
+_base_: base.yaml
+model:
+  fusion_type: concat_only

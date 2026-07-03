@@ -1,0 +1,5 @@
+# Table: Attention mechanism ablation — "Linformer" row.
+_base_: base.yaml
+model:
+  attention_type: linformer
+  linformer_proj_dim: 128

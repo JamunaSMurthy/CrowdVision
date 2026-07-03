@@ -1,0 +1,7 @@
+# Table: Adaptive temporal-view ablation — "Pyramid downsampling" row.
+# Coarse and medium views are derived by progressively pooling the fine view
+# instead of being constructed independently from the raw clip.
+_base_: base.yaml
+model:
+  view_mode: pyramid
+  view_window_sizes: [8, 4, 2]

@@ -1,0 +1,13 @@
+-r requirements.txt
+
+# Optional extras (video decoding, ONNX export) — see pyproject.toml [video]/[export]
+decord>=0.6.0
+av>=11.0.0
+onnx>=1.15
+onnxruntime>=1.16
+
+# Development / CI tooling — see pyproject.toml [dev]
+pytest>=7.4
+pytest-cov>=4.1
+ruff>=0.4
+black>=24.1

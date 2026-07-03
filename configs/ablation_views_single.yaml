@@ -1,0 +1,4 @@
+# Table: Adaptive temporal-view ablation — "Single adaptive view" row.
+_base_: base.yaml
+model:
+  view_window_sizes: [4]

@@ -1,0 +1,17 @@
+# ShanghaiTech Campus (Liu et al., CVPR 2018) is natively a one-class /
+# binary normal-vs-abnormal anomaly benchmark; it has no fixed multi-class
+# taxonomy, and the paper does not specify one. num_classes therefore
+# defaults to 2 (normal / abnormal) here. If you build a richer multi-class
+# taxonomy for this dataset, num_classes is synced automatically from the
+# class map produced by scripts/make_manifest.py (see
+# crowdvit.cli.common.resolve_num_classes) — you never need to hand-edit
+# this value once a class map exists.
+_base_: ../base.yaml
+model:
+  num_classes: 2
+data:
+  name: shanghaitech
+  train_manifest: data/manifests/shanghaitech_train.csv
+  val_manifest: data/manifests/shanghaitech_val.csv
+  test_manifest: data/manifests/shanghaitech_test.csv
+  class_map: data/manifests/shanghaitech_classes.json

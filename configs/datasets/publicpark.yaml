@@ -1,0 +1,16 @@
+# Public Park surveillance dataset (Section "Datasets and Evaluation Protocol").
+# Classes named in the paper: normal activity, fall, overcrowding,
+# restricted-area crossing, hazardous-object holding, garbage-area
+# violation, other anomaly (7 classes) — this is the paper's own class
+# set, not a guess. num_classes is still synced automatically from the
+# class map produced by scripts/make_manifest.py once you build one (see
+# crowdvit.cli.common.resolve_num_classes).
+_base_: ../base.yaml
+model:
+  num_classes: 7
+data:
+  name: publicpark
+  train_manifest: data/manifests/publicpark_train.csv
+  val_manifest: data/manifests/publicpark_val.csv
+  test_manifest: data/manifests/publicpark_test.csv
+  class_map: data/manifests/publicpark_classes.json

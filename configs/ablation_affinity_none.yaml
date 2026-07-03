@@ -1,0 +1,5 @@
+# Table: View affinity design — "No affinity graph" row.
+# Each view only attends to its own kernel summary (A = identity).
+_base_: base.yaml
+model:
+  affinity_type: none

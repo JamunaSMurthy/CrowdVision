@@ -1,0 +1,16 @@
+# XD-Violence (Wu et al., ECCV 2020, "Not Only Look, But Also Listen")
+# defines 6 weakly-supervised violence categories (Abuse, Car Accident,
+# Explosion, Fighting, Riot, Shooting) plus a Normal class, i.e. 7 labels —
+# that is the source of the default below, not a guess. num_classes is
+# still synced automatically from the class map produced by
+# scripts/make_manifest.py if you build your own taxonomy (see
+# crowdvit.cli.common.resolve_num_classes).
+_base_: ../base.yaml
+model:
+  num_classes: 7
+data:
+  name: xdviolence
+  train_manifest: data/manifests/xdviolence_train.csv
+  val_manifest: data/manifests/xdviolence_val.csv
+  test_manifest: data/manifests/xdviolence_test.csv
+  class_map: data/manifests/xdviolence_classes.json

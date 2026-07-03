@@ -1,0 +1,7 @@
+# Table: Fusion mechanism ablation — "Full cross-attention" row.
+# Dense quadratic softmax attention across all tokens of all views. Slightly
+# higher accuracy than KGA in the paper but far more expensive (310 GFLOPs,
+# 19 FPS vs. 110 GFLOPs, 52 FPS for KGA) — kept only as an upper-bound baseline.
+_base_: base.yaml
+model:
+  fusion_type: full_cross_attention

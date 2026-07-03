@@ -1,0 +1,6 @@
+# Table: Fusion mechanism ablation — "Performer-only fusion" row.
+# Cross-view mixing via a single Performer linear-attention layer run over
+# the full concatenated token sequence, with no explicit affinity graph.
+_base_: base.yaml
+model:
+  fusion_type: performer_only

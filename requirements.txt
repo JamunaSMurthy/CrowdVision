@@ -1,0 +1,10 @@
+# Core runtime dependencies. Equivalent to `pip install -e .`; see
+# pyproject.toml for optional extras ([video], [export], [dev]) and the
+# single source of truth for version constraints.
+torch>=2.1
+torchvision>=0.16
+numpy>=1.24
+pyyaml>=6.0
+tqdm>=4.66
+tensorboard>=2.14
+scikit-learn>=1.3

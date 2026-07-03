@@ -1,0 +1,4 @@
+# Table: Fusion/refinement and loss ablation — "w/o temporal loss" row.
+_base_: base.yaml
+loss:
+  use_temporal_loss: false

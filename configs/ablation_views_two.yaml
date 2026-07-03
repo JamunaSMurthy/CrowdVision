@@ -1,0 +1,4 @@
+# Table: Adaptive temporal-view ablation — "Two adaptive views" row.
+_base_: base.yaml
+model:
+  view_window_sizes: [8, 2]

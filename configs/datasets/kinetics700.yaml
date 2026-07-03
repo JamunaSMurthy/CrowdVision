@@ -1,0 +1,9 @@
+_base_: ../base.yaml
+model:
+  num_classes: 700
+data:
+  name: kinetics700
+  train_manifest: data/manifests/kinetics700_train.csv
+  val_manifest: data/manifests/kinetics700_val.csv
+  test_manifest: data/manifests/kinetics700_test.csv
+  class_map: data/manifests/kinetics700_classes.json

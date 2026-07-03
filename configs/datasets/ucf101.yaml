@@ -1,0 +1,9 @@
+_base_: ../base.yaml
+model:
+  num_classes: 101
+data:
+  name: ucf101
+  train_manifest: data/manifests/ucf101_train.csv
+  val_manifest: data/manifests/ucf101_val.csv
+  test_manifest: data/manifests/ucf101_test.csv
+  class_map: data/manifests/ucf101_classes.json

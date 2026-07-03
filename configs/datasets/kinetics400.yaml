@@ -1,0 +1,9 @@
+_base_: ../base.yaml
+model:
+  num_classes: 400
+data:
+  name: kinetics400
+  train_manifest: data/manifests/kinetics400_train.csv
+  val_manifest: data/manifests/kinetics400_val.csv
+  test_manifest: data/manifests/kinetics400_test.csv
+  class_map: data/manifests/kinetics400_classes.json
