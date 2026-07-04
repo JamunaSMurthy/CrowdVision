@@ -73,7 +73,7 @@ CrowdViT ships config presets for both general-purpose action recognition and su
 | Category | Datasets |
 |---|---|
 | 🏃 General action recognition | Kinetics-400, Kinetics-600, Kinetics-700, UCF101 |
-| 🎥 Surveillance / abnormal-event | ShanghaiTech, XD-Violence, Public Park (7-class, paper-defined taxonomy) |
+| 🎥 Surveillance / abnormal-event | ShanghaiTech, XD-Violence, Public Park |
 
 ---
 
